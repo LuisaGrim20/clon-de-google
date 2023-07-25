@@ -1,22 +1,18 @@
 * {
-    /* background-color: blueviolet; */
-    /*Modelo de caja (espaciados)*/
-    margin: 0px;
-    padding: 0px;
-
-    /*configuraciones letras*/
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    /*Modelo de caja*/
+    margin: 0px;        /*Margenes*/
+    padding: 4px;       /* Espacio entre caracteres*/
+    font-size: 14px;    /*Tipo de letra*/
+    font-family: Arial, Helvetica, sans-serif;  /*Fuente*/
 }
 
 header {
     /*Modelo de caja (tamaños)*/
-    height: 8vh;
+    height: 4vh;
 }
 main {
     /*Modelo de caja (tamaños)*/
-    height: 83vh;
-
+    height: 70vh;
     /* Configuración de el contenedor padre (como se van a comportar los hijos)*/
     display: flex;
     flex-direction: column;
@@ -27,6 +23,7 @@ main {
 footer {
     /* height: auto; */
     background: #f2f2f2;
+    font-size: 8px;
 }
 
 
@@ -39,14 +36,14 @@ header nav {
 ul {
     /* Configuración de el contenedor padre (como se van a comportar los hijos)*/
     display: flex;
-
     /*configuración visual (no hayan puntitos)*/
     list-style: none;
+    align-items: flex-end;
 }
 
 li{
     /*Modelo de caja (espaciados)*/
-    padding: 20px 10px;
+    padding: 15px 10px;
 }
 
 /*Comportamiento del link el resto del tiempo*/
@@ -68,15 +65,14 @@ a:hover {
     text-decoration: underline;
 }
 
-#nav-right-section{
-    /*Modelo de caja (espaciados)*/
+#nav-right-section{ /*Navegacion de lista 1*/
     padding: 20px 10px;
 }
 
-#nav-left-section{
-    /*Modelo de caja (espaciados)*/
+#nav-left-section{ /*Navegacion de lista 2*/
     padding: 0px 10px;
 }
+
 
 #footer-listas{
     /* Configuración de el contenedor padre (como se van a comportar los hijos)*/
@@ -90,9 +86,14 @@ a:hover {
 }
 
 
-#footer-listas ul li {
+#footer-listas ul li a{
     /*Modelo de caja (espaciados)*/
     padding: 15px;
+    color: rgb(112, 117, 122);
+}
+
+#perfil{
+    border-radius: 50px;
 }
 
 button {
